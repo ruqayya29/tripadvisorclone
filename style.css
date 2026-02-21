@@ -1,0 +1,436 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+/* Heading Section*/
+.headingsection {
+  display: flex;
+  background-color: white;
+  padding: 10px;
+  margin-left: 50px;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.headingsection__s1 img {
+  width: 200px;
+  object-fit: cover;
+
+}
+
+/*
+.headingsection__s1 {
+  font-size: 16px;
+  font-weight: 100;
+  text-align: center;
+}*/
+
+.headingsection__s2 {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-size: 14px;
+}
+
+.headingsection__s3 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.headingsection__container {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.headingsection__s3__img img {
+  width: 15px;
+  height: 15px;
+  padding: 0;
+}
+
+.headingsection__s3__currency {
+  border-left: 1px solid #ccc;
+  padding-left: 8px;
+}
+
+.headingsection__s3__button input {
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 16px;
+  margin: 15px;
+}
+
+.headingsection__container:hover {
+  opacity: 0.6;
+  background-color: #ccc;
+}
+
+.headingsection__menu,
+.headingsection__user {
+  display: none;
+}
+
+/* Question Section*/
+
+.question {
+  text-align: center;
+  padding: 20px;
+
+}
+
+.question h1 {
+  font-size: 56px;
+  font-weight: bolder;
+  margin-left: 50px;
+}
+
+/*Categories*/
+
+.categories {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.categories__c1 {
+  display: flex;
+  gap: 5px;
+  border-bottom: solid black 2px;
+}
+
+.categories__c1 img {
+  align-items: center;
+  width: 25px;
+  height: 25px;
+}
+
+.categories__c2 {
+  display: flex;
+  gap: 5px;
+}
+
+.categories__c2 img {
+  align-items: center;
+  width: 25px;
+  height: 25px;
+}
+
+.categories__c3 {
+  display: flex;
+  gap: 5px;
+}
+
+.categories__c3 img {
+  align-items: center;
+  width: 25px;
+  height: 25px;
+}
+
+.categories__c4 {
+  display: flex;
+  gap: 5px;
+}
+
+.categories__c4 img {
+  align-items: center;
+  width: 20px;
+  height: 20px;
+}
+
+.categories__c2:hover {
+  border-bottom: solid black 2px;
+  cursor: pointer;
+}
+
+.categories__c3:hover {
+  border-bottom: solid black 2px;
+  cursor: pointer;
+}
+
+.categories__c4:hover {
+  border-bottom: solid black 2px;
+  cursor: pointer;
+}
+
+.search {
+  display: flex;
+  border: solid black 0.1px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  margin-top: 20px;
+  margin-left: 25%;
+  padding: 10px;
+  border-radius: 40px;
+  gap: 10px;
+  align-items: center;
+  background-color: white;
+
+
+}
+
+.search input {
+  border: none;
+  width: 100%;
+  background-color: transparent;
+  font-size: 16px;
+}
+
+.search button {
+  border: none;
+  background-color: #00D352;
+  padding: 15px;
+  border-radius: 30px;
+  width: 100px;
+  border: solid #00D352 2px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+
+/*Hero Section*/
+.hero {
+  display: flex;
+  align-items: center;
+  background-color: #00EB5B;
+  margin: 50px 100px;
+  border-radius: 25px;
+  min-height: 380px;
+  overflow: hidden;
+}
+
+.hero__card {
+  flex: 0 0 55%;
+  position: relative;
+}
+
+.hero__card img {
+  width: 95%;
+  height: 380px;
+  object-fit: cover;
+  padding: 18px;
+  display: block;
+  padding-right: 0;
+  border-radius: 40px;
+}
+
+.hero__title {
+  flex: 1;
+  padding: 40px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-left: 5px solid black;
+}
+
+.hero__title h1 {
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 1.15;
+}
+
+.hero__title p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.hero__title button {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 16px 36px;
+  font-size: 18px;
+  font-weight: bold;
+  width: fit-content;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.hero__title button:hover {
+  opacity: 0.8;
+}
+
+/*Find things*/
+.things {
+  padding: 30px;
+  margin: 50px 60px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.things__t1 p {
+  margin-top: 10px;
+}
+
+.gallery {
+  margin-top: 10px;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-around;
+
+}
+
+.gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.things-card1,
+.things-card2,
+.things-card3,
+.things-card4 {
+  position: relative;
+}
+
+.things-t1,
+.things-t2,
+.things-t3,
+.things-t4 {
+  position: absolute;
+  bottom: 10%;
+  padding: 10px;
+  color: white;
+}
+
+/*Places*/
+.places {
+  padding: 30px;
+  margin: 50px 60px;
+
+}
+
+
+.places-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+
+.places-container img {
+  width: 100%;
+  height: 300px;
+
+  object-fit: cover;
+  border-radius: 30px;
+
+}
+
+.places-card {
+  flex: 1 1 25%;
+  position: relative;
+
+}
+
+.places-card h3 {
+  position: absolute;
+  bottom: 10px;
+  padding: 10px;
+  color: white;
+  font-size: 22px;
+}
+
+.places-card:hover {
+  opacity: 0.8;
+}
+
+/*Footer*/
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #ccc;
+  color: rgb(0, 0, 0);
+
+}
+
+.footer-one {
+
+  display: flex;
+  justify-content: center;
+
+  padding: 50px;
+  gap: 30px;
+}
+
+.footer-one-s4 {
+  margin-left: 200px;
+}
+
+.footer-two {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.footer-one p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/*Media Queries*/
+@media screen and (max-width:600px) {
+  .headingsection {
+    position: sticky;
+    top: 0;
+  }
+
+  .headingsection__s2,
+  .headingsection__s3 {
+    display: none;
+  }
+
+  .headingsection__menu,
+  .headingsection__user {
+    display: block;
+
+  }
+
+  .question {
+    display: none;
+  }
+
+  .categories {
+    margin-left: 100px;
+  }
+
+  .search {
+    width: 100%;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .places {
+    width: 100%;
+    margin-right: 50px;
+  }
+
+  .footer {
+    width: fit-content;
+    text-align: center;
+  }
+}
